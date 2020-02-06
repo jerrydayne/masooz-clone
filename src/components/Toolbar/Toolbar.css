@@ -1,0 +1,66 @@
+.toolbar {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding: 0 3rem;
+}
+
+/* .toolbar__logo {
+    margin-left: 1rem;
+} */
+
+.spacer{
+    flex: 1;
+}
+
+.toolbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.toolbar_navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_navigation-items li {
+    padding: 0 0.5rem;
+}
+
+.toolbar_navigation-items a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active {
+    color: rgb(0, 183, 255);
+}
+
+@media (max-width: 768px){
+    .toolbar_navigation-items{
+        display: none;
+    }
+    
+    .toolbar {
+        margin-left: 0;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (min-width: 769px){
+    .toolbar__toggle-button{
+        display: none;
+    }
+}
+
+.medic_btn {
+    border-radius: 15%;
+    background-color: red;
+}

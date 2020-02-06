@@ -1,0 +1,96 @@
+.what_we_do {
+    top: 0;
+    left: 0;
+    height: 800px;
+    background: linear-gradient(rgba(5, 1, 56, 0.818), rgba(24, 0, 0, 0.532)), url(../../../images/slide_one.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.medic_home {
+    position: relative;
+    top: 50%;
+    left: 45%;
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    /* height: 160px; */
+    -webkit-transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%); 
+}
+
+.medic_home .text1 {
+    margin: 6px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px red;
+    font-size: 60px;
+    font-family: alfa_slab;
+    padding: 21px 0px 0px 50px;
+    text-transform: uppercase;
+}
+.medic_home .text2 {
+    text-transform: uppercase;
+    margin: 6px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px blue;
+    font-size: 80px;
+    font-family: fredoka;
+    padding: 0px 0px 0px 50px;
+}
+
+.medic_prompt{
+    margin: 0;
+    position: relative;
+    font-size: 30px;
+    font-family: courgette;
+    top: 50px;
+    left: 15%;
+    padding: 0 20px;
+    border: 1px solid #127CC1;
+    border-radius: 15px;
+    background: #127CC1;
+    color: white;
+	box-shadow: 2px 7px 10px rgb(85, 66, 66);
+	transition: all .4s
+}
+.medic_prompt:hover{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    color: #127CC1;
+	box-shadow: 2px 7px 10px #127CC1;
+	transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 768px){
+    .medic_home{
+        top: 45%;
+    }
+
+    .medic_home .text1,
+    .medic_home .text2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .medic_prompt{
+        font-size: 20px;
+        margin: 0px auto;
+        position: relative;
+        padding: 10 10px;
+        top: 90px;
+        left: 10%;
+    }
+
+}
+
+
+/* spedd section starts here */
+.speed {
+    height: 500px;
+    background: red;
+}

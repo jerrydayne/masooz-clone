@@ -1,0 +1,49 @@
+.side-drawer{
+    height: 100%;
+    background: linear-gradient(rgba(5, 1, 56, 0.918), rgba(70, 2, 30, 0.932)), url(../../images/medic-icon.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+}
+
+.side-drawer.open {
+    transform: translateX(0);
+}
+
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-drawer li {
+    margin: 0.5rem 0;
+}
+
+.side-drawer a {
+    color: rgb(192, 197, 241);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: teal;
+}
+
+@media (min-width: 769px){
+    .side-drawer{
+        display: none;
+    }
+}
